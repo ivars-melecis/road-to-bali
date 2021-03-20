@@ -1,0 +1,4 @@
+/* Target IE9 and less */
+.old-browser {
+  display: block;
+}

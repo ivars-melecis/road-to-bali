@@ -1,0 +1,10 @@
+/* References
+=============*/
+.references {
+  position: relative;
+  margin-top: 300px;
+}
+
+.references hr {
+  margin-bottom: 20px;
+}
