@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/image-content.css" />
     <link rel="stylesheet" href="assets/css/button-list.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
     <link rel="preconnect" href="//fonts.gstatic.com" />
     <link
       href="//fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap"
@@ -94,9 +95,6 @@
             <a href="/about-movie.html">About Movie</a>
           </li>
           <li>
-            <a href="/actors.html">Actors</a>
-          </li>
-          <li>
             <a href="/gallery.html">Gallery</a>
           </li>
           <li>
@@ -119,6 +117,51 @@
             <a href="/gallery.html">Gallery</a>
           </li>
         </ul>
+
+        <!-- GALLERY -->
+        <div class="gallery-wrap">
+          <div class="gallery-controls">
+            <button class="gallery-btn" role="navigation" id="prev">
+              Prev
+            </button>
+            <button class="gallery-btn" role="navigation" id="next">
+              Next
+            </button>
+          </div>
+          <div class="gallery">
+            <div class="gallery-item active">
+              <img
+                src="galleries/entry-screen.png"
+                alt="Movie main actor names"
+              />
+            </div>
+            <div class="gallery-item">
+              <img src="galleries/3.png" alt="Harold and george dancing" />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="galleries/4.png"
+                alt="Princess Lala talking to her cousin"
+              />
+            </div>
+            <div class="gallery-item">
+              <img src="galleries/6.png" alt="Octopus - Boga Ten" />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="galleries/pyjamas.png"
+                alt="George and harold in pyjamas"
+              />
+            </div>
+          </div>
+          <div class="descriptions">
+            <p class="gallery-descr active">Movie main actor names</p>
+            <p class="gallery-descr">Harold and george dancing</p>
+            <p class="gallery-descr">Princess Lala talking to her cousin</p>
+            <p class="gallery-descr">Octopus - Boga Ten</p>
+            <p class="gallery-descr">George and harold in pyjamas</p>
+          </div>
+        </div>
       </main>
 
       <!-- OCEAN FLOOR -->
@@ -161,5 +204,6 @@
     </div>
 
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/gallery.js"></script>
   </body>
 </html>

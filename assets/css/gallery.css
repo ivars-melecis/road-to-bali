@@ -1,0 +1,89 @@
+.gallery-wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.gallery {
+  position: relative;
+  width: 100%;
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  width: 100%;
+}
+
+.gallery-item img {
+  align-self: flex-start;
+  max-width: 100%;
+}
+
+.gallery-item span {
+  margin-top: auto;
+  display: block;
+  background: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  background: orange;
+  text-align: center;
+}
+
+.gallery-item.active {
+  display: flex;
+}
+
+.gallery-btn.inactive {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.descriptions {
+  position: relative;
+  margin-top: 20px;
+}
+
+.descriptions .gallery-descr {
+  display: none;
+  text-align: center;
+  background: var(--colourFour);
+  color: var(--colourTwo);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.descriptions .gallery-descr.active {
+  display: block;
+}
+
+/* gallery controls
+===================*/
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.gallery-controls .gallery-btn {
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  background: var(--colourFour);
+  margin: 0 5px;
+  color: var(--colourTwo);
+  border-radius: 5px;
+  transition: ease 0.2s background;
+  cursor: pointer;
+}
+
+.gallery-controls .gallery-btn:focus,
+.gallery-controls .gallery-btn:hover {
+  background: var(--colourEight);
+}

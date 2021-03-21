@@ -8,3 +8,7 @@
 .references hr {
   margin-bottom: 20px;
 }
+
+.references p {
+  word-break: break-all;
+}
