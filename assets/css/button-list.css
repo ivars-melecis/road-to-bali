@@ -35,26 +35,28 @@
   background: var(--colourEight);
 }
 
-.button-list.stacked ul {
-  flex-wrap: wrap;
-  padding: 0 25px;
-}
+@media (min-width: 801px) {
+  .button-list.stacked ul {
+    flex-wrap: wrap;
+    padding: 0 25px;
+  }
 
-.button-list.stacked ul li {
-  width: calc(50% - 40px);
-  margin-bottom: 20px;
+  .button-list.stacked ul li {
+    width: calc(50% - 40px);
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 800px) {
   .button-list ul {
-    flex-direction: column;
+    display: block;
     padding: 0 25px;
   }
 
   .button-list ul li {
-    min-width: 260px;
-    max-width: 100%;
-    margin-bottom: 10px;
+    display: block;
+    margin: 0 0 10px 0;
+    width: 100%;
   }
 
   .button-list ul li:last-child {
