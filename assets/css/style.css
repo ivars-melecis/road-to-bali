@@ -856,14 +856,6 @@ header {
   }
 }
 
-@keyframes octopus-entry {
-  from {
-  }
-  to {
-    background-position: left -200px center;
-  }
-}
-
 .diver {
   display: block;
   background: url(../images/diver.png) left top no-repeat;
