@@ -31,13 +31,13 @@
         aria-controls="menu"
         aria-expanded="false"
       >
-        <div class="menu-trigger-lines">
+        <span class="menu-trigger-lines">
           <span></span>
-        </div>
-        <div class="menu-trigger-title-wrap">
-          <span class="menu-trigger-title mt-off">Menu</span>
-          <span class="menu-trigger-title mt-on">Close</span>
-        </div>
+        </span>
+        <span class="menu-trigger-title-wrap">
+          <p class="menu-trigger-title mt-off">Menu</p>
+          <p class="menu-trigger-title mt-on">Close</p>
+        </span>
       </button>
     </div>
 
@@ -82,7 +82,7 @@
       </header>
 
       <!-- MAIN MENU -->
-      <nav id="menu" class="menu" role="menubar">
+      <nav id="menu" class="menu">
         <h2 class="sr-only">Site Menu</h2>
         <ul>
           <li>
@@ -161,6 +161,14 @@
 
       <!-- FOOTER -->
       <footer class="footer">
+        <button
+          class="to-top desktop-only"
+          id="to-top"
+          aria-label="Scroll to top"
+          title="Scroll to top"
+        >
+          &#x2B06;
+        </button>
         <ul>
           <li><a href="/sitemap.html">Sitemap</a></li>
           <li>
