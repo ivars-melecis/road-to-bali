@@ -42,7 +42,6 @@ body {
   color: var(--colourOne);
   background: var(--colourSix) url(../images/white-sand.png) center center
     repeat;
-  font-display: swap;
 }
 
 @media (min-width: 981px) {
@@ -87,7 +86,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.generic-section:not(.main-content .generic-section) {
+.generic-section:not(.generic-section):not(.main-content) {
   padding: 0 25px;
 }
 
