@@ -85,6 +85,9 @@ function swapImages(item){
 
 function scrollTop(){
   const btn = document.getElementById('to-top');
+
+  if(!btn) return;
+  
   btn.addEventListener('click', () =>  {
     window.scrollTo({
       top:0,
